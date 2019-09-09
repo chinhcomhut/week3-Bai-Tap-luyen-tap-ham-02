@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So sánh 3 số nguyên lấy số nhỏ nhất</title>
+</head>
+<body>
+<script>
+    function min3number(a, b, c) {
+        let min;
+        let d = a < b ? a : b;
+        if (d < c) {
+            min = d;
+        } else min = c;
+        return min;
+
+    }
+
+    let number1 = parseInt(prompt("enter the value of number1 : "));
+    let number2 = parseInt(prompt("enter the value of number2 : "));
+    let number3 = parseInt(prompt("enter the value of number3 : "));
+    document.write("The smallest of three number is: " + min3number(number1, number2, number3));
+</script>
+</body>
+</html>

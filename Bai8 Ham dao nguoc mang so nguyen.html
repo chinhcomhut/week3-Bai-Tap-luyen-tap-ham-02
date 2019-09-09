@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng số nguyên</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Enter the elements of a array numbers of interge:"))
+    arr = new Array();
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter the every elements of array:" + i));
+    }
+    document.write("Array before reverse : " + arr + "<br>")
+    arr.reverse(); // Funtion reverse a array//
+    document.write("Array after reverse is: " + arr)
+</script>
+</body>
+</html>

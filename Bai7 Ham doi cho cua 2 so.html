@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi chỗ 2 số</title>
+</head>
+<body>
+<script>
+    function SwapTwoNumber(a, b) {
+        if (a != b) {
+            return 1
+        } else {
+            return 0
+        }
+    }
+
+    let a = parseInt(prompt("enter a:"));
+    let b = parseInt(prompt("enter b:"));
+    if(SwapTwoNumber(a, b)==1){
+        document.write(b, a)
+    }else {
+        document.write(a, a)
+    }
+</script>
+</body>
+</html>

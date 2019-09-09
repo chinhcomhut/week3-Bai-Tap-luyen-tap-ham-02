@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9 làm thử</title>
+</head>
+<body>
+<script>
+    function PositionMinArray(v) {
+        //let v = parseInt(arr);
+        let vitri = 0;
+        //let v = const;
+        /* if (arr.length == 0) {
+             return -1;*/
+for (i=0;i<arr.length;i++){
+    if (arr!=v){return -1;}
+}
+
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] == v) {
+                vitri = vitri + 1;
+            }
+            }return vitri;
+        }
+
+
+
+    let v = parseInt(prompt("Enter the value of v :"));
+    let n = parseInt(prompt("Enter the elements of array:"));
+    let arr = new Array();
+    for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter every element of array: " + i));
+    }
+
+    document.write("Array: " + arr + "<br>")
+    //document.write("vịtri"+PositionMinArray(arr))//
+    document.write(PositionMinArray(v))
+</script>
+</body>
+</html>

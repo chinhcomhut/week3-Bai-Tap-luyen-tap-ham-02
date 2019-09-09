@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên dương</title>
+</head>
+<body>
+<script>
+    function checkNumber(num) {
+        if (num > 0) {
+            return true;
+        } else {
+            return false
+        }
+    }
+
+    let number = parseInt(prompt("Enter a number to check whether it is a positive integer or not:"));
+    document.write("result : " + checkNumber(number))
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm: findIndex() </title>
+</head>
+<body>
+<script>
+    function character(arr,char){
+        let i;
+        let count=0;
+        let position;
+        for(i=0;i< arr.length;i++){
+            if(char===arr[i]){
+                position =i;
+                document.write(char+ "in array at position : "+ i + "  "+"<br>");
+                count= count +1;
+            }
+            if(i===arr.length-1){
+                break;
+            }
+        }
+        return count;
+    }
+    let arr = new Array();
+    let i;
+    let n = parseInt(prompt("Enter the length of array:"));
+    for (i = 0; i < n; i++) {
+        arr[i] = prompt("Enter the element:" + i);
+    }
+    document.write("Array: " + arr + "<br>")
+    let v = prompt("Enter the value of v: ")
+
+    //let arr1=[3,4,6,7,8,9,34,8];
+    //let v=1;
+    let result=character(arr,v);
+    document.write("Number of occurrences in array :"+ result);
+</script>
+</body>
+</html>
